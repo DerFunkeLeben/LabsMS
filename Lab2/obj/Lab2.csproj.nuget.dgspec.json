@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mpei\\LabsMS\\Labs\\Labs.csproj": {}
+    "D:\\mpei\\LabsMS\\Lab2\\Lab2.csproj": {}
   },
   "projects": {
-    "D:\\mpei\\LabsMS\\Labs\\Labs.csproj": {
+    "D:\\mpei\\LabsMS\\Lab2\\Lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mpei\\LabsMS\\Labs\\Labs.csproj",
-        "projectName": "Labs",
-        "projectPath": "D:\\mpei\\LabsMS\\Labs\\Labs.csproj",
+        "projectUniqueName": "D:\\mpei\\LabsMS\\Lab2\\Lab2.csproj",
+        "projectName": "Lab2",
+        "projectPath": "D:\\mpei\\LabsMS\\Lab2\\Lab2.csproj",
         "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-        "outputPath": "D:\\mpei\\LabsMS\\Labs\\obj\\",
+        "outputPath": "D:\\mpei\\LabsMS\\Lab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
-            "targetAlias": "netcoreapp2.1",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,16 +37,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
-          "targetAlias": "netcoreapp2.1",
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            }
-          },
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -57,6 +49,14 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }

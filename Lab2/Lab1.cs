@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Lab2 {
+namespace Labs {
     public class Identifier {
         public string Name { get; set; }
         public int Attr { get; set; }

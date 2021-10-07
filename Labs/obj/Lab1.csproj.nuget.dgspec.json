@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mpei\\LabsMS\\Labs\\Labs.csproj": {}
+    "D:\\mpei\\LabsMS\\Labs\\Lab1.csproj": {}
   },
   "projects": {
-    "D:\\mpei\\LabsMS\\Labs\\Labs.csproj": {
+    "D:\\mpei\\LabsMS\\Labs\\Lab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mpei\\LabsMS\\Labs\\Labs.csproj",
-        "projectName": "Labs",
-        "projectPath": "D:\\mpei\\LabsMS\\Labs\\Labs.csproj",
+        "projectUniqueName": "D:\\mpei\\LabsMS\\Labs\\Lab1.csproj",
+        "projectName": "Lab1",
+        "projectPath": "D:\\mpei\\LabsMS\\Labs\\Lab1.csproj",
         "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
         "outputPath": "D:\\mpei\\LabsMS\\Labs\\obj\\",
         "projectStyle": "PackageReference",

@@ -9,3 +9,16 @@ C:\Users\Egor\Desktop\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.AssemblyInfoInput
 C:\Users\Egor\Desktop\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.AssemblyInfo.cs
 C:\Users\Egor\Desktop\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.dll
 C:\Users\Egor\Desktop\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.pdb
+D:\mpei\LabsMS\Labs\bin\Debug\netcoreapp2.1\Labs.deps.json
+D:\mpei\LabsMS\Labs\bin\Debug\netcoreapp2.1\Labs.runtimeconfig.json
+D:\mpei\LabsMS\Labs\bin\Debug\netcoreapp2.1\Labs.runtimeconfig.dev.json
+D:\mpei\LabsMS\Labs\bin\Debug\netcoreapp2.1\Labs.dll
+D:\mpei\LabsMS\Labs\bin\Debug\netcoreapp2.1\Labs.pdb
+D:\mpei\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.csproj.AssemblyReference.cache
+D:\mpei\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.GeneratedMSBuildEditorConfig.editorconfig
+D:\mpei\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.AssemblyInfoInputs.cache
+D:\mpei\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.AssemblyInfo.cs
+D:\mpei\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.csproj.CoreCompileInputs.cache
+D:\mpei\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.dll
+D:\mpei\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.pdb
+D:\mpei\LabsMS\Labs\obj\Debug\netcoreapp2.1\Labs.genruntimeconfig.cache
