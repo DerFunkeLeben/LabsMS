@@ -24,24 +24,38 @@ namespace Lab2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string data = inputData.Text;
-            string Lexem = "";
             LexemsTable.Rows.Clear();
 
-            while ((Lexem = LeksBlock.GetLexem(inputData.Text)) != "\0")
-            {
-                LeksBlock.table.Add(Lexem, LeksBlock.GetLexemType(Lexem).ToString());
-                dataGridView1.Rows.Add(Lexem, LeksBlock.GetLexemType(Lexem));
-            }
-            Node p = LeksBlock.table.head;
+            FillTable_Lexems();
+            FillTable_Ids();
+        }
+    
+        private void FillTable_Lexems()
+        {
+            string Lexem = "";
 
-            while (p != null)
+            while ((Lexem = LexBlock.GetLexem(inputData.Text)) != "\0")
             {
-                if (p.type == "ID" || p.type == "INT")
-                    dataGridView2.Rows.Add(p.id, p.type);
-                p = p.next;
+                string Attr = LexBlock.GetLexemType(Lexem).ToString();
+                Identifier id = new Identifier
+                {
+                    Name = Lexem,
+                    Attr = Attr
+                };
+                LexBlock.table.Add(id);
+                LexemsTable.Rows.Add(Lexem, Attr);
             }
+        }
 
+        private void FillTable_Ids()
+        {
+            LinkedListNode node = LexBlock.table.Head;
+            while (node != null)
+            {
+                if (node.Value.Attr == "ID" || node.Value.Attr == "INT")
+                    TableOfIds.Rows.Add(node.Value.Name, node.Value.Attr);
+                node = node.Next;
+            }
         }
     }
 }

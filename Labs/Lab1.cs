@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading;
 
-namespace Lab2 {
+namespace Lab1 {
     public class Identifier {
         public string Name { get; set; }
-        public int Attr { get; set; }
+        public string Attr { get; set; }
     }
     public class LinkedListNode {
         private LinkedListNode _head;
@@ -106,8 +106,8 @@ namespace Lab2 {
                 if(name == "")
                     break;
 
-                Console.Write("Attribute(int): ");
-                int attr = int.Parse(Console.ReadLine());
+                Console.Write("Attribute: ");
+                var attr = Console.ReadLine();
 
                 Identifier id = new Identifier
                 {
@@ -145,8 +145,8 @@ namespace Lab2 {
             Console.Write("Name: ");
             var name = Console.ReadLine();
 
-            Console.Write("Attribute(int): ");
-            int attr = int.Parse(Console.ReadLine());
+            Console.Write("Attribute: ");
+            var attr = Console.ReadLine();
 
             Identifier id = new Identifier {
                 Name = name,

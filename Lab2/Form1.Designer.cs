@@ -33,18 +33,18 @@ namespace Lab2
             this.button1 = new System.Windows.Forms.Button();
             this.inputData = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.LexemsTable = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TableOfIds = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LexemsTable = new System.Windows.Forms.DataGridView();
+            this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TableOfIds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LexemsTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -78,7 +78,7 @@ namespace Lab2
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.TableOfIds);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.LexemsTable);
@@ -88,6 +88,53 @@ namespace Lab2
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Result";
+            // 
+            // TableOfIds
+            // 
+            this.TableOfIds.AllowUserToAddRows = false;
+            this.TableOfIds.AllowUserToDeleteRows = false;
+            this.TableOfIds.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TableOfIds.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.TableOfIds.Location = new System.Drawing.Point(319, 45);
+            this.TableOfIds.Name = "TableOfIds";
+            this.TableOfIds.ReadOnly = true;
+            this.TableOfIds.RowTemplate.Height = 25;
+            this.TableOfIds.Size = new System.Drawing.Size(295, 737);
+            this.TableOfIds.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Value";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Class";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Lexems";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(319, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Table of identifiers";
             // 
             // LexemsTable
             // 
@@ -104,15 +151,6 @@ namespace Lab2
             this.LexemsTable.Size = new System.Drawing.Size(295, 737);
             this.LexemsTable.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(319, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Table of identifiers";
-            // 
             // Value
             // 
             this.Value.HeaderText = "Value";
@@ -126,44 +164,6 @@ namespace Lab2
             this.Class.Name = "Class";
             this.Class.ReadOnly = true;
             this.Class.Width = 150;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Lexems";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.dataGridView1.Location = new System.Drawing.Point(319, 45);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(295, 737);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Value";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Class";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 150;
             // 
             // Form1
             // 
@@ -179,8 +179,8 @@ namespace Lab2
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TableOfIds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LexemsTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,7 +192,7 @@ namespace Lab2
         private System.Windows.Forms.TextBox inputData;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView LexemsTable;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView TableOfIds;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Label label2;

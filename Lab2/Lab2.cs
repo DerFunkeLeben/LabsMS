@@ -1,8 +1,4 @@
-﻿using System;
-using System.Threading;
-
-namespace Labs {
-
+﻿namespace Lab2 {
     static class LexBlock
     {
         public enum LexType
@@ -11,8 +7,8 @@ namespace Labs {
             ID,
             INT,
             OP_SET,
-            OP_DIV,
-            OP_MIN,
+            OP_MULT,
+            OP_PLS,
             OP_LESS,
             OP_MORE,
             DELIM_COM,
@@ -21,69 +17,91 @@ namespace Labs {
             BRA_CLS,
             KW_IF,
             KW_ELSE,
-            KW_DO,
-            KW_UNTIL,
+            KW_ENDIF,
+            KW_FOR,
+            KW_FOREND,
             END,
         }
-        public static LexemeType GetLexemType(string input)
+
+        public static string Input { get { return Input; } set { Input = value; index = 0; } }
+
+        public static int index { get; set; }
+        public static string Terminal = "+*(),;=<> \n\r";
+        public static LinkedListNode table = new LinkedListNode();
+
+        public static string GetLexem(string data)
         {
-            if (input == "if") return LexemeType.KW_IF;
-            if (input == "else") return LexemeType.KW_ELSE;
-            if (input == "until") return LexemeType.KW_UNTIL;
-            if (input == "do") return LexemeType.KW_DO;
-            if (input == "(") return LexemeType.BRA_OPN;
-            if (input == ")") return LexemeType.BRA_CLS;
-            if (input == "<") return LexemeType.OP_LESS;
-            if (input == ">") return LexemeType.OP_MORE;
-            if (input == ":=") return LexemeType.OP_SET;
-            if (input == "-") return LexemeType.OP_MIN;
-            if (input == ";") return LexemeType.DELIM_SEMI;
-            if (input == ",") return LexemeType.DELIM_COM;
-            if (input == "/") return LexemeType.OP_DIV;
-            if (input == "\0") return LexemeType.END;
-            int num = 0;
-            if (int.TryParse(input, out num))
+            while (index < data.Length)
             {
-                return LexemeType.INT;
-            }
-            for (int i = 0; i < input.Length; i++)
-                if (input[i] < 'a' || input[i] > 'z')
+
+                if (data[index] == ' '
+                 || data[index] == '\0'
+                 || data[index] == '\n'
+                 || data[index] == '\r')
                 {
-                    if (input[i] < 'A' || input[i] > 'Z')
-                        return LexemeType.INVALID;
+                    return data[index].ToString();
                 }
-            return LexemeType.ID;
+                index++;
+            }
+
+            if (data[index] == '=' )
+            {
+                index++;
+                return "=";
+            }
+            for (int i = index; i < data.Length; i++)
+            {
+                if (Terminal.Contains(data[i]))
+                {
+                    if (index == i)
+                    {
+                        index = i + 1;
+                        return data[i].ToString();
+                    }
+                    index = i;
+                    return data.Substring(index, i - index);
+                }
+                if (i == data.Length - 1)
+                {
+                    index = i + 1;
+                    return data.Substring(index, i - index + 1);
+                }
+            }
+            return "\0";
         }
+        public static LexType GetLexemType(string lex)
+        {
+            switch (lex)
+            {
+                case "if": return LexType.KW_IF;
+                case "else": return LexType.KW_ELSE;
+                case "endif": return LexType.KW_ENDIF;
+                case "for": return LexType.KW_FOR;
+                case "end": return LexType.KW_FOREND;
+                case "(": return LexType.BRA_OPN;
+                case ")": return LexType.BRA_CLS;
+                case "<": return LexType.OP_LESS;
+                case ">": return LexType.OP_MORE;
+                case "=": return LexType.OP_SET;
+                case "+": return LexType.OP_PLS;
+                case "*": return LexType.OP_MULT;
+                case ";": return LexType.DELIM_SEMI;
+                case ",": return LexType.DELIM_COM;
+                case "\0": return LexType.END;
+                case "\r": return LexType.INVALID;
+                case "\n": return LexType.INVALID;
+                default: break;
+            }
 
+            int num = 0;
+            if (int.TryParse(lex, out num))
+                return LexType.INT;
+
+            foreach (int i in lex)
+                if ((lex[i] < 'a' || lex[i] > 'z') && (lex[i] < 'A' || lex[i] > 'Z'))
+                    return LexType.INVALID;
+
+            return LexType.ID;
+        }
     }
-
-
-
-    int option = int.Parse(Console.ReadLine());
-                switch(option) {
-                    case 1:
-                        menu.Init(list);
-                        break;
-                    case 2:
-                        menu.Print(list);
-                        break;
-                    case 3:
-                        menu.Add(list);
-                        break;
-                    case 4:
-                        menu.Find(list);
-                        break;
-                    case 5:
-                        menu.Remove(list);
-                        break;
-                    case 6:
-                        running = false;
-                        break;
-                    default:
-                        Console.WriteLine("ERROR - INCORRECT OPTION");
-                        break;
-                
-            
-        
-    
 }
