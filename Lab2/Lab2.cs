@@ -1,4 +1,6 @@
-﻿namespace Lab2 {
+﻿using System;
+
+namespace Lab2 {
     static class LexBlock
     {
         public enum LexType
@@ -26,23 +28,18 @@
         public static string Input { get { return Input; } set { Input = value; index = 0; } }
 
         public static int index { get; set; }
-        public static string Terminal = "+*(),;=<> \n\r";
+        public static char[] Terminal = { '+','*','(',')',',',';','=','<','>',' ','\n','\r' };
         public static LinkedListNode table = new LinkedListNode();
 
         public static string GetLexem(string data)
         {
-            while (index < data.Length)
-            {
-
-                if (data[index] == ' '
-                 || data[index] == '\0'
-                 || data[index] == '\n'
-                 || data[index] == '\r')
-                {
-                    return data[index].ToString();
-                }
-                index++;
-            }
+            for(; (index < data.Length) 
+               && (data[index] == ' '
+               || data[index] == '\0'
+               || data[index] == '\n'
+               || data[index] == '\r'); index++);
+            if (index == data.Length)
+                return "\0";
 
             if (data[index] == '=' )
             {
@@ -51,20 +48,22 @@
             }
             for (int i = index; i < data.Length; i++)
             {
-                if (Terminal.Contains(data[i]))
+                if (Array.Exists(Terminal, item => item == data[i]))
                 {
                     if (index == i)
                     {
                         index = i + 1;
                         return data[i].ToString();
                     }
+                    string temp = data.Substring(index, i - index);
                     index = i;
-                    return data.Substring(index, i - index);
+                    return temp;
                 }
                 if (i == data.Length - 1)
                 {
+                    string temp = data.Substring(index, i - index + 1);
                     index = i + 1;
-                    return data.Substring(index, i - index + 1);
+                    return temp;
                 }
             }
             return "\0";
@@ -97,8 +96,8 @@
             if (int.TryParse(lex, out num))
                 return LexType.INT;
 
-            foreach (int i in lex)
-                if ((lex[i] < 'a' || lex[i] > 'z') && (lex[i] < 'A' || lex[i] > 'Z'))
+            foreach (int l in lex)
+                if ((l < 'a' || l > 'z') && (l < 'A' || l > 'Z'))
                     return LexType.INVALID;
 
             return LexType.ID;

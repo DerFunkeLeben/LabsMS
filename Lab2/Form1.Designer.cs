@@ -70,6 +70,7 @@ namespace Lab2
             // 
             // inputData
             // 
+            this.inputData.Font = new System.Drawing.Font("Fira Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inputData.Location = new System.Drawing.Point(6, 22);
             this.inputData.Multiline = true;
             this.inputData.Name = "inputData";
@@ -93,6 +94,7 @@ namespace Lab2
             // 
             this.TableOfIds.AllowUserToAddRows = false;
             this.TableOfIds.AllowUserToDeleteRows = false;
+            this.TableOfIds.BackgroundColor = System.Drawing.SystemColors.Info;
             this.TableOfIds.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TableOfIds.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -101,7 +103,7 @@ namespace Lab2
             this.TableOfIds.Name = "TableOfIds";
             this.TableOfIds.ReadOnly = true;
             this.TableOfIds.RowTemplate.Height = 25;
-            this.TableOfIds.Size = new System.Drawing.Size(295, 737);
+            this.TableOfIds.Size = new System.Drawing.Size(294, 737);
             this.TableOfIds.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -116,7 +118,7 @@ namespace Lab2
             this.dataGridViewTextBoxColumn2.HeaderText = "Class";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 150;
+            this.dataGridViewTextBoxColumn2.Width = 134;
             // 
             // label2
             // 
@@ -140,6 +142,7 @@ namespace Lab2
             // 
             this.LexemsTable.AllowUserToAddRows = false;
             this.LexemsTable.AllowUserToDeleteRows = false;
+            this.LexemsTable.BackgroundColor = System.Drawing.SystemColors.Info;
             this.LexemsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.LexemsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Value,
@@ -148,7 +151,7 @@ namespace Lab2
             this.LexemsTable.Name = "LexemsTable";
             this.LexemsTable.ReadOnly = true;
             this.LexemsTable.RowTemplate.Height = 25;
-            this.LexemsTable.Size = new System.Drawing.Size(295, 737);
+            this.LexemsTable.Size = new System.Drawing.Size(294, 737);
             this.LexemsTable.TabIndex = 0;
             // 
             // Value
@@ -163,7 +166,7 @@ namespace Lab2
             this.Class.HeaderText = "Class";
             this.Class.Name = "Class";
             this.Class.ReadOnly = true;
-            this.Class.Width = 150;
+            this.Class.Width = 134;
             // 
             // Form1
             // 
@@ -173,7 +176,7 @@ namespace Lab2
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lab2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -193,10 +196,10 @@ namespace Lab2
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView LexemsTable;
         private System.Windows.Forms.DataGridView TableOfIds;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Value;
         private System.Windows.Forms.DataGridViewTextBoxColumn Class;
     }

@@ -24,7 +24,8 @@ namespace Lab2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LexemsTable.Rows.Clear();
+            LexBlock.table = new LinkedListNode();
+            LexBlock.index = 0;
 
             FillTable_Lexems();
             FillTable_Ids();
@@ -33,6 +34,7 @@ namespace Lab2
         private void FillTable_Lexems()
         {
             string Lexem = "";
+            LexemsTable.Rows.Clear();
 
             while ((Lexem = LexBlock.GetLexem(inputData.Text)) != "\0")
             {
@@ -49,6 +51,7 @@ namespace Lab2
 
         private void FillTable_Ids()
         {
+            TableOfIds.Rows.Clear();
             LinkedListNode node = LexBlock.table.Head;
             while (node != null)
             {
