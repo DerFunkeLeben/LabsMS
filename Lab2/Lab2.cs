@@ -87,8 +87,6 @@ namespace Lab2 {
                 case ";": return LexType.DELIM_SEMI;
                 case ",": return LexType.DELIM_COM;
                 case "\0": return LexType.END;
-                case "\r": return LexType.INVALID;
-                case "\n": return LexType.INVALID;
                 default: break;
             }
 
