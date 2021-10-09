@@ -25,8 +25,6 @@ namespace Lab2 {
             END,
         }
 
-        public static string Input { get { return Input; } set { Input = value; index = 0; } }
-
         public static int index { get; set; }
         public static char[] Terminal = { '+','*','(',')',',',';','=','<','>',' ','\n','\r' };
         public static LinkedListNode table = new LinkedListNode();
@@ -41,11 +39,6 @@ namespace Lab2 {
             if (index == data.Length)
                 return "\0";
 
-            if (data[index] == '=' )
-            {
-                index++;
-                return "=";
-            }
             for (int i = index; i < data.Length; i++)
             {
                 if (Array.Exists(Terminal, item => item == data[i]))
