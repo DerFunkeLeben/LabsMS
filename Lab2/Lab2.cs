@@ -29,6 +29,14 @@ namespace Lab2 {
         public static char[] Terminal = { '+','*','(',')',',',';','=','<','>',' ','\n','\r' };
         public static LinkedListNode table = new LinkedListNode();
 
+        private static bool TerminalExists(char item)
+        {
+            foreach (char lex in Terminal)
+                if (lex == item) return true;
+            return false;
+        }
+        private static bool isLetter(char l) => (l >= 'a' && l <= 'z') || (l >= 'A' && l <= 'Z');
+
         public static string GetLexem(string data)
         {
             for(; (index < data.Length) 
@@ -41,7 +49,7 @@ namespace Lab2 {
 
             for (int i = index; i < data.Length; i++)
             {
-                if (Array.Exists(Terminal, item => item == data[i]))
+                if (TerminalExists(data[i]))
                 {
                     if (index == i)
                     {
@@ -87,11 +95,18 @@ namespace Lab2 {
             if (int.TryParse(lex, out num))
                 return LexType.INT;
 
-            foreach (int l in lex)
-                if ((l < 'a' || l > 'z') && (l < 'A' || l > 'Z'))
+            if (isLetter(lex[0]))
+                foreach (char l in lex)
+                {
+                    if (isLetter(l) || int.TryParse(l.ToString(), out num))
+                        continue;
                     return LexType.INVALID;
+                }
+            else return LexType.INVALID;
 
             return LexType.ID;
         }
+
+         
     }
 }

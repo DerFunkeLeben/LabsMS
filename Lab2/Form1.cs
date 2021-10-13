@@ -39,13 +39,17 @@ namespace Lab2
             while ((Lexem = LexBlock.GetLexem(inputData.Text)) != "\0")
             {
                 string Attr = LexBlock.GetLexemType(Lexem).ToString();
-                Identifier id = new Identifier
-                {
-                    Name = Lexem,
-                    Attr = Attr
-                };
-                LexBlock.table.Add(id);
                 LexemsTable.Rows.Add(Lexem, Attr);
+
+                if(!LexBlock.table.Contains(Lexem) && (Attr == "ID" || Attr == "INT"))
+                {
+                    Identifier id = new Identifier
+                    {
+                        Name = Lexem,
+                        Attr = Attr
+                    };
+                    LexBlock.table.Add(id);
+                }
             }
         }
 
@@ -55,10 +59,10 @@ namespace Lab2
             LinkedListNode node = LexBlock.table.Head;
             while (node != null)
             {
-                if (node.Value.Attr == "ID" || node.Value.Attr == "INT")
-                    TableOfIds.Rows.Add(node.Value.Name, node.Value.Attr);
+                TableOfIds.Rows.Add(node.Value.Name, node.Value.Attr);
                 node = node.Next;
             }
+
         }
     }
 }
