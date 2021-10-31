@@ -1,0 +1,16 @@
+D:\mpei\LabsMS\Lab3\bin\Debug\netcoreapp3.1\Lab3.exe
+D:\mpei\LabsMS\Lab3\bin\Debug\netcoreapp3.1\Lab3.deps.json
+D:\mpei\LabsMS\Lab3\bin\Debug\netcoreapp3.1\Lab3.runtimeconfig.json
+D:\mpei\LabsMS\Lab3\bin\Debug\netcoreapp3.1\Lab3.runtimeconfig.dev.json
+D:\mpei\LabsMS\Lab3\bin\Debug\netcoreapp3.1\Lab3.dll
+D:\mpei\LabsMS\Lab3\bin\Debug\netcoreapp3.1\Lab3.pdb
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.csproj.AssemblyReference.cache
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.Form1.resources
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.csproj.GenerateResource.cache
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.AssemblyInfoInputs.cache
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.AssemblyInfo.cs
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.csproj.CoreCompileInputs.cache
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.dll
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.pdb
+D:\mpei\LabsMS\Lab3\obj\Debug\netcoreapp3.1\Lab3.genruntimeconfig.cache
