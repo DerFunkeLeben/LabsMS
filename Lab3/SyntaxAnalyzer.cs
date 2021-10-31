@@ -10,6 +10,9 @@ namespace Lab3
         {
             bool result = true;
             bool keep = false;
+            bool bra_opened = false;
+            bool inside_for = false;
+
             LexBlock.index = 0;
             string LexemType = "";
             Stack<string> PDA = new Stack<string>();
@@ -17,7 +20,7 @@ namespace Lab3
             PDA.Push("<.>");
             PDA.Push("<program>");
             
-            while (result)
+            while (result && !PDA.IsEmpty())
             {
                 
                 if (!keep)
@@ -51,7 +54,7 @@ namespace Lab3
                             PDA.Push("<operators list>");
                             PDA.Push("<operator>");
                         }
-                        else if ((LexemType == "KW_ENDIF") || (LexemType == "END") || (LexemType == "KW_FOREND"))
+                        else if ((LexemType == "KW_ENDIF") || (LexemType == "END") || (LexemType == "KW_FOREND") || (LexemType == "KW_ELSE"))
                         {
                             PDA.Pop();
                         }
@@ -73,21 +76,17 @@ namespace Lab3
                             PDA.Push("<end>");
                             PDA.Push("<operators list>");
                             PDA.Push("<)>");
-
                             PDA.Push("<E>");
                             PDA.Push("<=>");
-                            //PDA.Push("<ID>"); id??
-
+                            PDA.Push("<ID>");
                             PDA.Push("<;>");
                             PDA.Push("<logical expression>");
                             PDA.Push("<;>");
-
                             PDA.Push("<E>");
                             PDA.Push("<=>");
-                            //PDA.Push("<ID>"); id??
-
+                            PDA.Push("<ID>");
                             PDA.Push("<(>");
-                            //PDA.Push("<FOR>"); id??
+                            inside_for = true;
                         }
                         else if ((LexemType == "KW_IF"))
                         {
@@ -161,7 +160,7 @@ namespace Lab3
                             PDA.Push("<T>");
                             keep = false;
                         }
-                        else if((LexemType == "DELIM_SEMI"))
+                        else if((LexemType == "DELIM_SEMI") || (LexemType == "BRA_CLS" && bra_opened && inside_for))
                         {
                             PDA.Pop();
                             keep = true;
@@ -188,7 +187,7 @@ namespace Lab3
                             PDA.Push("<F>");
                             keep = false;
                         }
-                        else if ((LexemType == "DELIM_SEMI"))
+                        else if ((LexemType == "DELIM_SEMI") || (LexemType == "BRA_CLS" && bra_opened && inside_for))
                         {
                             PDA.Pop();
                             keep = true;
@@ -200,7 +199,7 @@ namespace Lab3
                         if ((LexemType == "ID") || (LexemType == "INT"))
                             PDA.Pop();
                         else result = false;
-                        keep = true;
+                        keep = false;
                         break;
 
                     case ("<=>"):
@@ -212,14 +211,17 @@ namespace Lab3
                         break;
 
                     case ("<(>"):
+                        bra_opened = true;
                         Pop_Shift(ref LexemType, "BRA_OPN", ref PDA, ref result, ref keep);
                         break;
 
                     case ("<)>"):
+                        bra_opened = false;
                         Pop_Shift(ref LexemType, "BRA_CLS", ref PDA, ref result, ref keep);
                         break;
 
                     case ("<end>"):
+                        inside_for = false;
                         Pop_Shift(ref LexemType, "KW_FOREND", ref PDA, ref result, ref keep);
                         break;
 
@@ -229,6 +231,10 @@ namespace Lab3
 
                     case ("<.>"):
                         Pop_Shift(ref LexemType, "END", ref PDA, ref result, ref keep);
+                        break;
+
+                    case ("<ID>"):
+                        Pop_Shift(ref LexemType, "ID", ref PDA, ref result, ref keep);
                         break;
 
                     default:
