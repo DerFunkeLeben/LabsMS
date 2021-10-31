@@ -41,6 +41,9 @@ namespace Lab3
             this.data.Name = "data";
             this.data.Size = new System.Drawing.Size(380, 526);
             this.data.TabIndex = 0;
+            this.data.Text = "a=16*3+1;\r\nb=11+2*a;\r\nc=3*a+2;\r\n\r\nif(b<c) \r\n  a = 4*b;\r\n  b=12;\r\nelse\r\n  a=2*b+3;" +
+    "\r\n  a=19;\r\nendif\r\n\r\n\r\nk=99;\r\ns=10;\r\n\r\nfor(i=1; i<10; i=i+1)\r\n  k=l;\r\n  s=s+k;\r\ne" +
+    "nd";
             // 
             // resultMsg
             // 

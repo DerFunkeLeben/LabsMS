@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Lab3
@@ -19,6 +19,9 @@ namespace Lab3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            resultMsg.Text = "";
+            Thread.Sleep(500);
+
             bool result = SyntaxAnalyzer.programIsValid(data.Text);
             resultMsg.Text = result ? "Program is valid" : "Errors detected!!!";
             resultMsg.ForeColor = result ? Color.Green : Color.Red;

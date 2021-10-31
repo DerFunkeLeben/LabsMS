@@ -22,7 +22,6 @@ namespace Lab3
             
             while (result && !PDA.IsEmpty())
             {
-                
                 if (!keep)
                 {
                     string Lexem = LexBlock.GetLexem(data);
@@ -54,7 +53,10 @@ namespace Lab3
                             PDA.Push("<operators list>");
                             PDA.Push("<operator>");
                         }
-                        else if ((LexemType == "KW_ENDIF") || (LexemType == "END") || (LexemType == "KW_FOREND") || (LexemType == "KW_ELSE"))
+                        else if ((LexemType == "KW_ENDIF") ||
+                                (LexemType == "END") ||
+                                (LexemType == "KW_FOREND") ||
+                                (LexemType == "KW_ELSE"))
                         {
                             PDA.Pop();
                         }
