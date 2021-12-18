@@ -6,12 +6,13 @@ namespace Lab3
 {
     class SyntaxAnalyzer
     {
-        public static bool programIsValid(string data)
+        public static string programIsValid(string data)
         {
             bool result = true;
             bool keep = false;
             bool bra_opened = false;
             bool inside_for = false;
+            string res = "";
 
             LexBlock.index = 0;
             string LexemType = "";
@@ -24,6 +25,10 @@ namespace Lab3
             {
                 if (!keep)
                 {
+                    string[] pdaAr = PDA.ToArray();
+                    foreach (string el in pdaAr)
+                        res += el;
+                    res += "\t\t\t";
                     string Lexem = LexBlock.GetLexem(data);
                     LexemType = LexBlock.GetLexemType(Lexem).ToString();
                     if (LexemType == "INVALID")
@@ -245,7 +250,7 @@ namespace Lab3
                 }
             }
 
-            return result;
+            return res;
         }
 
         private static void Pop_Shift(ref string LexemType, string GotLexType, ref Stack<string> PDA, ref bool result, ref bool keep)

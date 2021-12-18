@@ -1,0 +1,39 @@
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\bin\Debug\MatOb_LR3.exe.config
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\bin\Debug\MatOb_LR3.exe
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\bin\Debug\MatOb_LR3.pdb
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\obj\Debug\MatOb_CourseProject.csprojAssemblyReference.cache
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\obj\Debug\MatOb_LR3.Form1.resources
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\obj\Debug\MatOb_LR3.Properties.Resources.resources
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\obj\Debug\MatOb_CourseProject.csproj.GenerateResource.cache
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\obj\Debug\MatOb_CourseProject.csproj.CoreCompileInputs.cache
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\obj\Debug\MatOb_LR3.exe
+B:\Visual Studio Projects\MihalevMatOb_CourseProject\MatOb_LR3\obj\Debug\MatOb_LR3.pdb
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.exe.config
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.exe
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.pdb
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.csprojAssemblyReference.cache
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.Form1.resources
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.Properties.Resources.resources
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.csproj.GenerateResource.cache
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.csproj.CoreCompileInputs.cache
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.exe
+B:\Visual Studio Projects\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.pdb
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.exe.config
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.exe
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.pdb
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.csprojAssemblyReference.cache
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.Form1.resources
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.Properties.Resources.resources
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.csproj.GenerateResource.cache
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.exe
+C:\Users\swald\Desktop\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.pdb
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.exe.config
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.exe
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.pdb
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.csproj.AssemblyReference.cache
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.Form1.resources
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.Properties.Resources.resources
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.csproj.GenerateResource.cache
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.csproj.CoreCompileInputs.cache
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.exe
+C:\Users\Egor\Downloads\КП_ЛимановАП_А-14-18 (1)\LimanovMatOb_CourseProject\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.pdb

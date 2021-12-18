@@ -1,0 +1,10 @@
+D:\mpei\LabsMS\CW\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.exe.config
+D:\mpei\LabsMS\CW\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.exe
+D:\mpei\LabsMS\CW\MatOb_CourseProject\bin\Debug\MatOb_CourseProject.pdb
+D:\mpei\LabsMS\CW\MatOb_CourseProject\obj\Debug\MS_CW.csproj.AssemblyReference.cache
+D:\mpei\LabsMS\CW\MatOb_CourseProject\obj\Debug\MS_CW.Form1.resources
+D:\mpei\LabsMS\CW\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.Properties.Resources.resources
+D:\mpei\LabsMS\CW\MatOb_CourseProject\obj\Debug\MS_CW.csproj.GenerateResource.cache
+D:\mpei\LabsMS\CW\MatOb_CourseProject\obj\Debug\MS_CW.csproj.CoreCompileInputs.cache
+D:\mpei\LabsMS\CW\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.exe
+D:\mpei\LabsMS\CW\MatOb_CourseProject\obj\Debug\MatOb_CourseProject.pdb

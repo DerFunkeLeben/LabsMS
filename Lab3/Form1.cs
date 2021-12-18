@@ -22,9 +22,9 @@ namespace Lab3
             resultMsg.Text = "";
             Thread.Sleep(500);
 
-            bool result = SyntaxAnalyzer.programIsValid(data.Text);
-            resultMsg.Text = result ? "Program is valid" : "Errors detected!!!";
-            resultMsg.ForeColor = result ? Color.Green : Color.Red;
+            string result = SyntaxAnalyzer.programIsValid(data.Text);
+            data.Text = result;
+            // resultMsg.ForeColor = result ? Color.Green : Color.Red;
         }
     }
 }
