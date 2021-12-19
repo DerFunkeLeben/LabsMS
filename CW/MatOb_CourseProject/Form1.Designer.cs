@@ -43,7 +43,7 @@
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 646);
+            this.textBox1.Size = new System.Drawing.Size(262, 809);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "a=16*3+1;\r\nb=11+2*a;\r\nc=3*a+2;\r\n\r\n\r\nif(b<c) \r\n  a = 4*b;\r\n  b=12;\r\nelse\r\n  a=2*b+" +
     "3;\r\n  a=19;\r\nendif\r\n\r\nk=99;\r\ns=10;\r\n\r\nfor(i=1; i<10; i=i+1;)\r\n  k=4;\r\n  s=s+k;\r\n" +
@@ -51,7 +51,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 664);
+            this.button1.Location = new System.Drawing.Point(12, 827);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 23);
             this.button1.TabIndex = 3;
@@ -65,7 +65,7 @@
             this.opergrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.opergrid.Location = new System.Drawing.Point(280, 12);
             this.opergrid.Name = "opergrid";
-            this.opergrid.Size = new System.Drawing.Size(500, 675);
+            this.opergrid.Size = new System.Drawing.Size(500, 838);
             this.opergrid.TabIndex = 4;
             // 
             // datagrid
@@ -74,12 +74,12 @@
             this.datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid.Location = new System.Drawing.Point(786, 12);
             this.datagrid.Name = "datagrid";
-            this.datagrid.Size = new System.Drawing.Size(497, 675);
+            this.datagrid.Size = new System.Drawing.Size(497, 838);
             this.datagrid.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(151, 664);
+            this.button2.Location = new System.Drawing.Point(151, 827);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 23);
             this.button2.TabIndex = 6;
@@ -92,7 +92,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1295, 699);
+            this.ClientSize = new System.Drawing.Size(1295, 862);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.datagrid);
             this.Controls.Add(this.opergrid);
